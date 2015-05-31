@@ -1,0 +1,866 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>types - jgo.tools.compiler.interm.types</title>
+          <meta name="description" content="types - jgo.tools.compiler.interm.types" />
+          <meta name="keywords" content="types jgo.tools.compiler.interm.types" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'jgo.tools.compiler.interm.types.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="jgo">jgo</a>.<a href="../../../package.html" class="extype" name="jgo.tools">tools</a>.<a href="../../package.html" class="extype" name="jgo.tools.compiler">compiler</a>.<a href="../package.html" class="extype" name="jgo.tools.compiler.interm">interm</a></p>
+        <h1>types</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">types</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.types.AddableType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AddableTypeextendsBuiltinType"></a>
+      <a id="AddableType:AddableType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AddableType.html"><span class="name">AddableType</span></a><span class="result"> extends <a href="BuiltinType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinType">BuiltinType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.ArrayType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ArrayTypeextendsUnderTypewithProductwithSerializable"></a>
+      <a id="ArrayType:ArrayType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ArrayType.html"><span class="name">ArrayType</span></a><span class="params">(<span name="length">length: <span class="extype" name="scala.Int">Int</span></span>, <span name="elemType">elemType: <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>)</span><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.BuiltinRefType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BuiltinRefTypeextendsUnderTypewithConstableType"></a>
+      <a id="BuiltinRefType:BuiltinRefType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BuiltinRefType.html"><span class="name">BuiltinRefType</span></a><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <a href="ConstableType.html" class="extype" name="jgo.tools.compiler.interm.types.ConstableType">ConstableType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.BuiltinType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BuiltinTypeextendsUnderTypewithConstableType"></a>
+      <a id="BuiltinType:BuiltinType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BuiltinType.html"><span class="name">BuiltinType</span></a><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <a href="ConstableType.html" class="extype" name="jgo.tools.compiler.interm.types.ConstableType">ConstableType</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A fundamental type -- one that cannot be seen as the composition
+of other types.</p>
+    </li><li name="jgo.tools.compiler.interm.types.ChanType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ChanTypeextendsUnderTypewithNilableTypewithProductwithSerializable"></a>
+      <a id="ChanType:ChanType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ChanType.html"><span class="name">ChanType</span></a><span class="params">(<span name="elemType">elemType: <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>, <span name="canRecv">canRecv: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="canSend">canSend: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <a href="NilableType.html" class="extype" name="jgo.tools.compiler.interm.types.NilableType">NilableType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.ComplexType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ComplexTypeextendsNumericType"></a>
+      <a id="ComplexType:ComplexType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ComplexType.html"><span class="name">ComplexType</span></a><span class="result"> extends <a href="NumericType.html" class="extype" name="jgo.tools.compiler.interm.types.NumericType">NumericType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.ConstableType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConstableTypeextendsType"></a>
+      <a id="ConstableType:ConstableType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ConstableType.html"><span class="name">ConstableType</span></a><span class="result"> extends <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A marker trait that indicates that a type can be the type
+of a compile-time constant.</p>
+    </li><li name="jgo.tools.compiler.interm.types.EmbeddedFieldDesc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EmbeddedFieldDescextendsFieldDescwithProductwithSerializable"></a>
+      <a id="EmbeddedFieldDesc:EmbeddedFieldDesc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EmbeddedFieldDesc.html"><span class="name">EmbeddedFieldDesc</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="typeOf">typeOf: <a href="NamedType.html" class="extype" name="jgo.tools.compiler.interm.types.NamedType">NamedType</a></span>, <span name="isPtr">isPtr: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="tag">tag: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>)</span><span class="result"> extends <a href="FieldDesc.html" class="extype" name="jgo.tools.compiler.interm.types.FieldDesc">FieldDesc</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.FieldDesc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FieldDescextendsAnyRef"></a>
+      <a id="FieldDesc:FieldDesc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FieldDesc.html"><span class="name">FieldDesc</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.FloatingType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FloatingTypeextendsRealType"></a>
+      <a id="FloatingType:FloatingType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatingType.html"><span class="name">FloatingType</span></a><span class="result"> extends <a href="RealType.html" class="extype" name="jgo.tools.compiler.interm.types.RealType">RealType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.FuncType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FuncTypeextendsUnderTypewithNilableTypewithProductwithSerializable"></a>
+      <a id="FuncType:FuncType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FuncType.html"><span class="name">FuncType</span></a><span class="params">(<span name="params">params: <span class="extype" name="scala.List">List</span>[<a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a>]</span>, <span name="results">results: <span class="extype" name="scala.List">List</span>[<a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a>]</span>, <span name="isVariadic">isVariadic: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <a href="NilableType.html" class="extype" name="jgo.tools.compiler.interm.types.NilableType">NilableType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.IntegralType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IntegralTypeextendsRealType"></a>
+      <a id="IntegralType:IntegralType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IntegralType.html"><span class="name">IntegralType</span></a><span class="result"> extends <a href="RealType.html" class="extype" name="jgo.tools.compiler.interm.types.RealType">RealType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.MapType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapTypeextendsUnderTypewithNilableTypewithProductwithSerializable"></a>
+      <a id="MapType:MapType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MapType.html"><span class="name">MapType</span></a><span class="params">(<span name="keyType">keyType: <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>, <span name="valueType">valueType: <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>)</span><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <a href="NilableType.html" class="extype" name="jgo.tools.compiler.interm.types.NilableType">NilableType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.NamedType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NamedTypeextendsType"></a>
+      <a id="NamedType:NamedType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="NamedType.html"><span class="name">NamedType</span></a><span class="result"> extends <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A named type which refers to some other type.</p>
+    </li><li name="jgo.tools.compiler.interm.types.NilableType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NilableTypeextendsType"></a>
+      <a id="NilableType:NilableType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="NilableType.html"><span class="name">NilableType</span></a><span class="result"> extends <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.NumericType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NumericTypeextendsPrimitiveTypewithAddableType"></a>
+      <a id="NumericType:NumericType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="NumericType.html"><span class="name">NumericType</span></a><span class="result"> extends <a href="PrimitiveType.html" class="extype" name="jgo.tools.compiler.interm.types.PrimitiveType">PrimitiveType</a> with <a href="AddableType.html" class="extype" name="jgo.tools.compiler.interm.types.AddableType">AddableType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.PointerType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PointerTypeextendsUnderTypewithNilableTypewithProductwithSerializable"></a>
+      <a id="PointerType:PointerType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PointerType.html"><span class="name">PointerType</span></a><span class="params">(<span name="elemType">elemType: <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>)</span><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <a href="NilableType.html" class="extype" name="jgo.tools.compiler.interm.types.NilableType">NilableType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.PrimitiveType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PrimitiveTypeextendsBuiltinType"></a>
+      <a id="PrimitiveType:PrimitiveType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PrimitiveType.html"><span class="name">PrimitiveType</span></a><span class="result"> extends <a href="BuiltinType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinType">BuiltinType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.RealType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RealTypeextendsNumericType"></a>
+      <a id="RealType:RealType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RealType.html"><span class="name">RealType</span></a><span class="result"> extends <a href="NumericType.html" class="extype" name="jgo.tools.compiler.interm.types.NumericType">NumericType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.RegularFieldDesc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RegularFieldDescextendsFieldDescwithProductwithSerializable"></a>
+      <a id="RegularFieldDesc:RegularFieldDesc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RegularFieldDesc.html"><span class="name">RegularFieldDesc</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="typeOf">typeOf: <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>, <span name="tag">tag: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">scala.None</span></span>)</span><span class="result"> extends <a href="FieldDesc.html" class="extype" name="jgo.tools.compiler.interm.types.FieldDesc">FieldDesc</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Semantics" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SemanticsextendsAnyRef"></a>
+      <a id="Semantics:Semantics"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Semantics.html"><span class="name">Semantics</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"></p>
+    </li><li name="jgo.tools.compiler.interm.types.SliceType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SliceTypeextendsUnderTypewithNilableTypewithProductwithSerializable"></a>
+      <a id="SliceType:SliceType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SliceType.html"><span class="name">SliceType</span></a><span class="params">(<span name="elemType">elemType: <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>)</span><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <a href="NilableType.html" class="extype" name="jgo.tools.compiler.interm.types.NilableType">NilableType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.StructType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StructTypeextendsUnderTypewithProductwithSerializable"></a>
+      <a id="StructType:StructType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StructType.html"><span class="name">StructType</span></a><span class="params">(<span name="fields">fields: <span class="extype" name="scala.List">List</span>[<a href="FieldDesc.html" class="extype" name="jgo.tools.compiler.interm.types.FieldDesc">FieldDesc</a>]</span>)</span><span class="result"> extends <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Type" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TypeextendsAnyRef"></a>
+      <a id="Type:Type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Type.html"><span class="name">Type</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A static type in the Go programming language.</p>
+    </li><li name="jgo.tools.compiler.interm.types.TypeAlias" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TypeAliasextendsNamedType"></a>
+      <a id="TypeAlias:TypeAlias"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TypeAlias.html"><span class="name">TypeAlias</span></a><span class="result"> extends <a href="NamedType.html" class="extype" name="jgo.tools.compiler.interm.types.NamedType">NamedType</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A named type that has no effective presence during execution; values of
+this type are represented as values of the referent type at runtime.</p>
+    </li><li name="jgo.tools.compiler.interm.types.UnderType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UnderTypeextendsType"></a>
+      <a id="UnderType:UnderType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UnderType.html"><span class="name">UnderType</span></a><span class="result"> extends <a href="Type.html" class="extype" name="jgo.tools.compiler.interm.types.Type">Type</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A type that may be an underlying type.</p>
+    </li><li name="jgo.tools.compiler.interm.types.UnsignedType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UnsignedTypeextendsIntegralType"></a>
+      <a id="UnsignedType:UnsignedType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UnsignedType.html"><span class="name">UnsignedType</span></a><span class="result"> extends <a href="IntegralType.html" class="extype" name="jgo.tools.compiler.interm.types.IntegralType">IntegralType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.UntypedConstType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UntypedConstTypeextendsConstableTypewithUnderType"></a>
+      <a id="UntypedConstType:UntypedConstType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedConstType.html"><span class="name">UntypedConstType</span></a><span class="result"> extends <a href="ConstableType.html" class="extype" name="jgo.tools.compiler.interm.types.ConstableType">ConstableType</a> with <a href="UnderType.html" class="extype" name="jgo.tools.compiler.interm.types.UnderType">UnderType</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A &quot;type&quot; for untyped constants.</p>
+    </li><li name="jgo.tools.compiler.interm.types.WrappedType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WrappedTypeextendsNamedType"></a>
+      <a id="WrappedType:WrappedType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WrappedType.html"><span class="name">WrappedType</span></a><span class="result"> extends <a href="NamedType.html" class="extype" name="jgo.tools.compiler.interm.types.NamedType">NamedType</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A named type that is reified at runtime.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.types.AnyChanType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AnyChanType"></a>
+      <a id="AnyChanType:AnyChanType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AnyChanType$.html"><span class="name">AnyChanType</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.BidirChanType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BidirChanType"></a>
+      <a id="BidirChanType:BidirChanType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BidirChanType$.html"><span class="name">BidirChanType</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.BoolType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BoolType"></a>
+      <a id="BoolType:BoolType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BoolType$.html"><span class="name">BoolType</span></a><span class="result"> extends <a href="PrimitiveType.html" class="extype" name="jgo.tools.compiler.interm.types.PrimitiveType">PrimitiveType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.BottomType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BottomType"></a>
+      <a id="BottomType:BottomType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BottomType$.html"><span class="name">BottomType</span></a><span class="result"> extends <a href="BuiltinRefType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinRefType">BuiltinRefType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.BuiltinFuncType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuiltinFuncType"></a>
+      <a id="BuiltinFuncType:BuiltinFuncType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BuiltinFuncType$.html"><span class="name">BuiltinFuncType</span></a><span class="result"> extends <a href="BuiltinRefType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinRefType">BuiltinRefType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A placeholder type for built-in funcs (those declared in the universe block),
+which do not have actual types.</p>
+    </li><li name="jgo.tools.compiler.interm.types.Complex128" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Complex128"></a>
+      <a id="Complex128:Complex128"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Complex128$.html"><span class="name">Complex128</span></a><span class="result"> extends <a href="ComplexType.html" class="extype" name="jgo.tools.compiler.interm.types.ComplexType">ComplexType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Complex64" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Complex64"></a>
+      <a id="Complex64:Complex64"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Complex64$.html"><span class="name">Complex64</span></a><span class="result"> extends <a href="ComplexType.html" class="extype" name="jgo.tools.compiler.interm.types.ComplexType">ComplexType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Float32" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Float32"></a>
+      <a id="Float32:Float32"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Float32$.html"><span class="name">Float32</span></a><span class="result"> extends <a href="FloatingType.html" class="extype" name="jgo.tools.compiler.interm.types.FloatingType">FloatingType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Float64" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Float64"></a>
+      <a id="Float64:Float64"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Float64$.html"><span class="name">Float64</span></a><span class="result"> extends <a href="FloatingType.html" class="extype" name="jgo.tools.compiler.interm.types.FloatingType">FloatingType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Int16" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Int16"></a>
+      <a id="Int16:Int16"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Int16$.html"><span class="name">Int16</span></a><span class="result"> extends <a href="IntegralType.html" class="extype" name="jgo.tools.compiler.interm.types.IntegralType">IntegralType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Int32" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Int32"></a>
+      <a id="Int32:Int32"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Int32$.html"><span class="name">Int32</span></a><span class="result"> extends <a href="IntegralType.html" class="extype" name="jgo.tools.compiler.interm.types.IntegralType">IntegralType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Int64" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Int64"></a>
+      <a id="Int64:Int64"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Int64$.html"><span class="name">Int64</span></a><span class="result"> extends <a href="IntegralType.html" class="extype" name="jgo.tools.compiler.interm.types.IntegralType">IntegralType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Int8" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Int8"></a>
+      <a id="Int8:Int8"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Int8$.html"><span class="name">Int8</span></a><span class="result"> extends <a href="IntegralType.html" class="extype" name="jgo.tools.compiler.interm.types.IntegralType">IntegralType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.NilType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NilType"></a>
+      <a id="NilType:NilType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NilType$.html"><span class="name">NilType</span></a><span class="result"> extends <a href="BuiltinRefType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinRefType">BuiltinRefType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Primitive" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Primitive"></a>
+      <a id="Primitive:Primitive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Primitive$.html"><span class="name">Primitive</span></a><span class="result"> extends <a href="Semantics.html" class="extype" name="jgo.tools.compiler.interm.types.Semantics">Semantics</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.RecvChanType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecvChanType"></a>
+      <a id="RecvChanType:RecvChanType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RecvChanType$.html"><span class="name">RecvChanType</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Reference" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Reference"></a>
+      <a id="Reference:Reference"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Reference$.html"><span class="name">Reference</span></a><span class="result"> extends <a href="Semantics.html" class="extype" name="jgo.tools.compiler.interm.types.Semantics">Semantics</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.SendChanType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SendChanType"></a>
+      <a id="SendChanType:SendChanType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SendChanType$.html"><span class="name">SendChanType</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.StringType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringType"></a>
+      <a id="StringType:StringType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StringType$.html"><span class="name">StringType</span></a><span class="result"> extends <a href="BuiltinRefType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinRefType">BuiltinRefType</a> with <a href="AddableType.html" class="extype" name="jgo.tools.compiler.interm.types.AddableType">AddableType</a> with <a href="NilableType.html" class="extype" name="jgo.tools.compiler.interm.types.NilableType">NilableType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.TopType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TopType"></a>
+      <a id="TopType:TopType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TopType$.html"><span class="name">TopType</span></a><span class="result"> extends <a href="BuiltinRefType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinRefType">BuiltinRefType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Type" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Type"></a>
+      <a id="Type:Type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Type$.html"><span class="name">Type</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Fundamental operations on types.</p>
+    </li><li name="jgo.tools.compiler.interm.types.Uint16" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Uint16"></a>
+      <a id="Uint16:Uint16"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Uint16$.html"><span class="name">Uint16</span></a><span class="result"> extends <a href="UnsignedType.html" class="extype" name="jgo.tools.compiler.interm.types.UnsignedType">UnsignedType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Uint32" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Uint32"></a>
+      <a id="Uint32:Uint32"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Uint32$.html"><span class="name">Uint32</span></a><span class="result"> extends <a href="UnsignedType.html" class="extype" name="jgo.tools.compiler.interm.types.UnsignedType">UnsignedType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Uint64" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Uint64"></a>
+      <a id="Uint64:Uint64"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Uint64$.html"><span class="name">Uint64</span></a><span class="result"> extends <a href="UnsignedType.html" class="extype" name="jgo.tools.compiler.interm.types.UnsignedType">UnsignedType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Uint8" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Uint8"></a>
+      <a id="Uint8:Uint8"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Uint8$.html"><span class="name">Uint8</span></a><span class="result"> extends <a href="UnsignedType.html" class="extype" name="jgo.tools.compiler.interm.types.UnsignedType">UnsignedType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.Underlying" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Underlying"></a>
+      <a id="Underlying:Underlying"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Underlying$.html"><span class="name">Underlying</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.UnitType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnitType"></a>
+      <a id="UnitType:UnitType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UnitType$.html"><span class="name">UnitType</span></a><span class="result"> extends <a href="BuiltinRefType.html" class="extype" name="jgo.tools.compiler.interm.types.BuiltinRefType">BuiltinRefType</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.UntypedBoolType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedBoolType"></a>
+      <a id="UntypedBoolType:UntypedBoolType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedBoolType$.html"><span class="name">UntypedBoolType</span></a><span class="result"> extends <a href="UntypedConstType.html" class="extype" name="jgo.tools.compiler.interm.types.UntypedConstType">UntypedConstType</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.types.UntypedStringType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedStringType"></a>
+      <a id="UntypedStringType:UntypedStringType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedStringType$.html"><span class="name">UntypedStringType</span></a><span class="result"> extends <a href="UntypedConstType.html" class="extype" name="jgo.tools.compiler.interm.types.UntypedConstType">UntypedConstType</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The type of string literals.</p>
+    </li><li name="jgo.tools.compiler.interm.types.Value" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Value"></a>
+      <a id="Value:Value"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Value$.html"><span class="name">Value</span></a><span class="result"> extends <a href="Semantics.html" class="extype" name="jgo.tools.compiler.interm.types.Semantics">Semantics</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+    </body>
+      </html>

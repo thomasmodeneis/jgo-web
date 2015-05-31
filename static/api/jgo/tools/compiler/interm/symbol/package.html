@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>symbol - jgo.tools.compiler.interm.symbol</title>
+          <meta name="description" content="symbol - jgo.tools.compiler.interm.symbol" />
+          <meta name="keywords" content="symbol jgo.tools.compiler.interm.symbol" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'jgo.tools.compiler.interm.symbol.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="jgo">jgo</a>.<a href="../../../package.html" class="extype" name="jgo.tools">tools</a>.<a href="../../package.html" class="extype" name="jgo.tools.compiler">compiler</a>.<a href="../package.html" class="extype" name="jgo.tools.compiler.interm">interm</a></p>
+        <h1>symbol</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">symbol</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.symbol.BuiltinFuncSymbol" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BuiltinFuncSymbolextendsSymbolwithProductwithSerializable"></a>
+      <a id="BuiltinFuncSymbol:BuiltinFuncSymbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BuiltinFuncSymbol.html"><span class="name">BuiltinFuncSymbol</span></a><span class="params">(<span name="bf">bf: <a href="../expr/bfunc/BuiltinFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinFunc">BuiltinFunc</a></span>)</span><span class="result"> extends <a href="Symbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.Symbol">Symbol</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.ConstSymbol" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConstSymbolextendsValueSymbolwithProductwithSerializable"></a>
+      <a id="ConstSymbol:ConstSymbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConstSymbol.html"><span class="name">ConstSymbol</span></a><span class="params">(<span name="value">value: <a href="../expr/ConstExpr.html" class="extype" name="jgo.tools.compiler.interm.expr.ConstExpr">ConstExpr</a></span>)</span><span class="result"> extends <a href="ValueSymbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.ValueSymbol">ValueSymbol</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.DummyVar" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DummyVarextendsParamVar"></a>
+      <a id="DummyVar:DummyVar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DummyVar.html"><span class="name">DummyVar</span></a><span class="result"> extends <a href="ParamVar.html" class="extype" name="jgo.tools.compiler.interm.symbol.ParamVar">ParamVar</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.Function" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FunctionextendsFuncwithValueSymbol"></a>
+      <a id="Function:Function"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Function.html"><span class="name">Function</span></a><span class="result"> extends <a href="../Func.html" class="extype" name="jgo.tools.compiler.interm.Func">Func</a> with <a href="ValueSymbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.ValueSymbol">ValueSymbol</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.GlobalVar" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GlobalVarextendsVariable"></a>
+      <a id="GlobalVar:GlobalVar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="GlobalVar.html"><span class="name">GlobalVar</span></a><span class="result"> extends <a href="Variable.html" class="extype" name="jgo.tools.compiler.interm.symbol.Variable">Variable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.LocalVar" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocalVarextendsParamVarwithFreezable"></a>
+      <a id="LocalVar:LocalVar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LocalVar.html"><span class="name">LocalVar</span></a><span class="result"> extends <a href="ParamVar.html" class="extype" name="jgo.tools.compiler.interm.symbol.ParamVar">ParamVar</a> with <a href="../../util/Freezable.html" class="extype" name="jgo.tools.compiler.util.Freezable">Freezable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.PackageSymbol" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PackageSymbolextendsSymbolwithProductwithSerializable"></a>
+      <a id="PackageSymbol:PackageSymbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PackageSymbol.html"><span class="name">PackageSymbol</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Symbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.Symbol">Symbol</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.ParamVar" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ParamVarextendsVariable"></a>
+      <a id="ParamVar:ParamVar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParamVar.html"><span class="name">ParamVar</span></a><span class="result"> extends <a href="Variable.html" class="extype" name="jgo.tools.compiler.interm.symbol.Variable">Variable</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.Symbol" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SymbolextendsAnyRef"></a>
+      <a id="Symbol:Symbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Symbol.html"><span class="name">Symbol</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.TypeSymbol" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TypeSymbolextendsSymbolwithProductwithSerializable"></a>
+      <a id="TypeSymbol:TypeSymbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TypeSymbol.html"><span class="name">TypeSymbol</span></a><span class="params">(<span name="theType">theType: <a href="../types/NamedType.html" class="extype" name="jgo.tools.compiler.interm.types.NamedType">NamedType</a></span>)</span><span class="result"> extends <a href="Symbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.Symbol">Symbol</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.ValueSymbol" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ValueSymbolextendsSymbolwithTyped"></a>
+      <a id="ValueSymbol:ValueSymbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ValueSymbol.html"><span class="name">ValueSymbol</span></a><span class="result"> extends <a href="Symbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.Symbol">Symbol</a> with <a href="../Typed.html" class="extype" name="jgo.tools.compiler.interm.Typed">Typed</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.Variable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="VariableextendsValueSymbol"></a>
+      <a id="Variable:Variable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Variable.html"><span class="name">Variable</span></a><span class="result"> extends <a href="ValueSymbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.ValueSymbol">ValueSymbol</a></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.symbol.IotaSymbol" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IotaSymbol"></a>
+      <a id="IotaSymbol:IotaSymbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IotaSymbol$.html"><span class="name">IotaSymbol</span></a><span class="result"> extends <a href="Symbol.html" class="extype" name="jgo.tools.compiler.interm.symbol.Symbol">Symbol</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.symbol.Symbol" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Symbol"></a>
+      <a id="Symbol:Symbol"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Symbol$.html"><span class="name">Symbol</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+    </body>
+      </html>

@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>compiler - jgo.tools.compiler</title>
+          <meta name="description" content="compiler - jgo.tools.compiler" />
+          <meta name="keywords" content="compiler jgo.tools.compiler" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'jgo.tools.compiler.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="jgo">jgo</a>.<a href="../package.html" class="extype" name="jgo.tools">tools</a></p>
+        <h1>compiler</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compiler</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="jgo.tools.compiler"><span>compiler</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="jgo.tools.compiler.Err" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Err[+T]extendsAnyRef"></a>
+      <a id="Err[+T]:Err[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Err.html"><span class="name">Err</span></a><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A result, or a list of compilation errors.</p>
+    </li><li name="jgo.tools.compiler.ErrorMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ErrorMsgextendsMessagewithProductwithSerializable"></a>
+      <a id="ErrorMsg:ErrorMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ErrorMsg.html"><span class="name">ErrorMsg</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pos">pos: <a href="#Pos=scala.util.parsing.input.Position" class="extmbr" name="jgo.tools.compiler.Pos">Pos</a></span>)</span><span class="result"> extends <a href="Message.html" class="extype" name="jgo.tools.compiler.Message">Message</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.LocalName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocalNameextendsNamewithProductwithSerializable"></a>
+      <a id="LocalName:LocalName"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LocalName.html"><span class="name">LocalName</span></a><span class="params">(<span name="unqualifiedName">unqualifiedName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Name.html" class="extype" name="jgo.tools.compiler.Name">Name</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.Message" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MessageextendsAnyRef"></a>
+      <a id="Message:Message"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Message.html"><span class="name">Message</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.Name" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NameextendsAnyRef"></a>
+      <a id="Name:Name"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Name.html"><span class="name">Name</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.NoteMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoteMsgextendsMessagewithProductwithSerializable"></a>
+      <a id="NoteMsg:NoteMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NoteMsg.html"><span class="name">NoteMsg</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pos">pos: <a href="#Pos=scala.util.parsing.input.Position" class="extmbr" name="jgo.tools.compiler.Pos">Pos</a></span>)</span><span class="result"> extends <a href="Message.html" class="extype" name="jgo.tools.compiler.Message">Message</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.PkgLevelName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PkgLevelNameextendsNamewithProductwithSerializable"></a>
+      <a id="PkgLevelName:PkgLevelName"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PkgLevelName.html"><span class="name">PkgLevelName</span></a><span class="params">(<span name="pkgs">pkgs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="unqualifiedName">unqualifiedName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Name.html" class="extype" name="jgo.tools.compiler.Name">Name</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.Pos" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Pos=scala.util.parsing.input.Position"></a>
+      <a id="Pos:Pos"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Pos</span><span class="result"> = <span class="extype" name="scala.util.parsing.input.Position">Position</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.Problems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ProblemsextendsErr[Nothing]"></a>
+      <a id="Problems:Problems"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Problems.html"><span class="name">Problems</span></a><span class="result"> extends <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.Result" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Result[+T]extendsErr[T]withProductwithSerializable"></a>
+      <a id="Result[+T]:Result[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Result.html"><span class="name">Result</span></a><span class="tparams">[<span name="T">+T</span>]</span><span class="params">(<span name="result">result: <span class="extype" name="jgo.tools.compiler.Result.T">T</span></span>)</span><span class="result"> extends <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.Result.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.WarningMsg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WarningMsgextendsMessagewithProductwithSerializable"></a>
+      <a id="WarningMsg:WarningMsg"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WarningMsg.html"><span class="name">WarningMsg</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pos">pos: <a href="#Pos=scala.util.parsing.input.Position" class="extmbr" name="jgo.tools.compiler.Pos">Pos</a></span>)</span><span class="result"> extends <a href="Message.html" class="extype" name="jgo.tools.compiler.Message">Message</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="jgo.tools.compiler.Err" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Err"></a>
+      <a id="Err:Err"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Err$.html"><span class="name">Err</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.Main" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Main"></a>
+      <a id="Main:Main"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Main$.html"><span class="name">Main</span></a><span class="result"> extends <span class="extype" name="scala.App">App</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.Problems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Problems"></a>
+      <a id="Problems:Problems"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Problems$.html"><span class="name">Problems</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.package#cardinal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cardinal(n:Int):String"></a>
+      <a id="cardinal(Int):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cardinal</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.package#errTupled2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="errTupled2[A,B](v:(jgo.tools.compiler.Err[A],jgo.tools.compiler.Err[B])):jgo.tools.compiler.Err[(A,B)]"></a>
+      <a id="errTupled2[A,B]((Err[A],Err[B])):Err[(A,B)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">errTupled2</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="v">v: (<a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled2.A">A</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled2.B">B</span>])</span>)</span><span class="result">: <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[(<span class="extype" name="jgo.tools.compiler.errTupled2.A">A</span>, <span class="extype" name="jgo.tools.compiler.errTupled2.B">B</span>)]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Wraps the provided value in a Result.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps the provided value in a Result.
+This method has result type Err[T] so that
+type inference behaves properly in cases like this:</p><pre>(ls: <span class="std">List</span>[Err[<span class="std">Unit</span>]]) <span class="kw">=&gt;</span> (ls foldLeft M(())) { _ then _ }</pre></div></div>
+    </li><li name="jgo.tools.compiler.package#errTupled3" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="errTupled3[A,B,C](v:(jgo.tools.compiler.Err[A],jgo.tools.compiler.Err[B],jgo.tools.compiler.Err[C])):jgo.tools.compiler.Err[(A,B,C)]"></a>
+      <a id="errTupled3[A,B,C]((Err[A],Err[B],Err[C])):Err[(A,B,C)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">errTupled3</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="v">v: (<a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled3.A">A</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled3.B">B</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled3.C">C</span>])</span>)</span><span class="result">: <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[(<span class="extype" name="jgo.tools.compiler.errTupled3.A">A</span>, <span class="extype" name="jgo.tools.compiler.errTupled3.B">B</span>, <span class="extype" name="jgo.tools.compiler.errTupled3.C">C</span>)]</span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.package#errTupled4" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="errTupled4[A,B,C,D](v:(jgo.tools.compiler.Err[A],jgo.tools.compiler.Err[B],jgo.tools.compiler.Err[C],jgo.tools.compiler.Err[D])):jgo.tools.compiler.Err[(A,B,C,D)]"></a>
+      <a id="errTupled4[A,B,C,D]((Err[A],Err[B],Err[C],Err[D])):Err[(A,B,C,D)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">errTupled4</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>]</span><span class="params">(<span name="v">v: (<a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled4.A">A</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled4.B">B</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled4.C">C</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled4.D">D</span>])</span>)</span><span class="result">: <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[(<span class="extype" name="jgo.tools.compiler.errTupled4.A">A</span>, <span class="extype" name="jgo.tools.compiler.errTupled4.B">B</span>, <span class="extype" name="jgo.tools.compiler.errTupled4.C">C</span>, <span class="extype" name="jgo.tools.compiler.errTupled4.D">D</span>)]</span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.package#errTupled5" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="errTupled5[A,B,C,D,E](v:(jgo.tools.compiler.Err[A],jgo.tools.compiler.Err[B],jgo.tools.compiler.Err[C],jgo.tools.compiler.Err[D],jgo.tools.compiler.Err[E])):jgo.tools.compiler.Err[(A,B,C,D,E)]"></a>
+      <a id="errTupled5[A,B,C,D,E]((Err[A],Err[B],Err[C],Err[D],Err[E])):Err[(A,B,C,D,E)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">errTupled5</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>, <span name="E">E</span>]</span><span class="params">(<span name="v">v: (<a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled5.A">A</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled5.B">B</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled5.C">C</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled5.D">D</span>], <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.errTupled5.E">E</span>])</span>)</span><span class="result">: <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[(<span class="extype" name="jgo.tools.compiler.errTupled5.A">A</span>, <span class="extype" name="jgo.tools.compiler.errTupled5.B">B</span>, <span class="extype" name="jgo.tools.compiler.errTupled5.C">C</span>, <span class="extype" name="jgo.tools.compiler.errTupled5.D">D</span>, <span class="extype" name="jgo.tools.compiler.errTupled5.E">E</span>)]</span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="interm"></a>
+      <a id="interm:interm"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="interm/package.html"><span class="name">interm</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.lexer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lexer"></a>
+      <a id="lexer:lexer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="lexer/package.html"><span class="name">lexer</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.package#ordinal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ordinal(n:Int):String"></a>
+      <a id="ordinal(Int):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ordinal</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.parser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="parser"></a>
+      <a id="parser:parser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="parser/package.html"><span class="name">parser</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.package#problem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="problem[T](msg:String,args:Any*)(implicitpos:jgo.tools.compiler.package.Pos):jgo.tools.compiler.Err[T]"></a>
+      <a id="problem[T](String,Any*)(Pos):Err[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">problem</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="args">args: <span class="extype" name="scala.Any">Any</span>*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="pos">pos: <a href="#Pos=scala.util.parsing.input.Position" class="extmbr" name="jgo.tools.compiler.Pos">Pos</a></span>)</span><span class="result">: <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.problem.T">T</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.package#result" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="result[T](v:T):jgo.tools.compiler.Err[T]"></a>
+      <a id="result[T](T):Err[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">result</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="v">v: <span class="extype" name="jgo.tools.compiler.result.T">T</span></span>)</span><span class="result">: <a href="Err.html" class="extype" name="jgo.tools.compiler.Err">Err</a>[<span class="extype" name="jgo.tools.compiler.result.T">T</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.scope" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="scope"></a>
+      <a id="scope:scope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="scope/package.html"><span class="name">scope</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.transl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="transl"></a>
+      <a id="transl:transl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="transl/package.html"><span class="name">transl</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.util" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="util"></a>
+      <a id="util:util"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="util/package.html"><span class="name">util</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>

@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>expr - jgo.tools.compiler.interm.expr</title>
+          <meta name="description" content="expr - jgo.tools.compiler.interm.expr" />
+          <meta name="keywords" content="expr jgo.tools.compiler.interm.expr" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'jgo.tools.compiler.interm.expr.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="jgo">jgo</a>.<a href="../../../package.html" class="extype" name="jgo.tools">tools</a>.<a href="../../package.html" class="extype" name="jgo.tools.compiler">compiler</a>.<a href="../package.html" class="extype" name="jgo.tools.compiler.interm">interm</a></p>
+        <h1>expr</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">expr</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="jgo.tools.compiler.interm.expr"><span>expr</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.expr.BoolConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BoolConstextendsConstExpr"></a>
+      <a id="BoolConst:BoolConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BoolConst.html"><span class="name">BoolConst</span></a><span class="result"> extends <a href="ConstExpr.html" class="extype" name="jgo.tools.compiler.interm.expr.ConstExpr">ConstExpr</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A boolean constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.Combinators" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CombinatorsextendsAnyRef"></a>
+      <a id="Combinators:Combinators"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Combinators.html"><span class="name">Combinators</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.ComplexConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ComplexConstextendsNumericConst"></a>
+      <a id="ComplexConst:ComplexConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ComplexConst.html"><span class="name">ComplexConst</span></a><span class="result"> extends <a href="NumericConst.html" class="extype" name="jgo.tools.compiler.interm.expr.NumericConst">NumericConst</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A complex constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.ConditionalExpr" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConditionalExprextendsExpr"></a>
+      <a id="ConditionalExpr:ConditionalExpr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConditionalExpr.html"><span class="name">ConditionalExpr</span></a><span class="result"> extends <a href="Expr.html" class="extype" name="jgo.tools.compiler.interm.expr.Expr">Expr</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An expression whose value can determine the flow of control through a
+function.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.ConstExpr" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConstExprextendsExpr"></a>
+      <a id="ConstExpr:ConstExpr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ConstExpr.html"><span class="name">ConstExpr</span></a><span class="result"> extends <a href="Expr.html" class="extype" name="jgo.tools.compiler.interm.expr.Expr">Expr</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An expression whose value is determined at compile-time.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.Expr" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ExprextendsTyped"></a>
+      <a id="Expr:Expr"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Expr.html"><span class="name">Expr</span></a><span class="result"> extends <a href="../Typed.html" class="extype" name="jgo.tools.compiler.interm.Typed">Typed</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An object that encapsulates information about an expression;
+most significantly, the type of that expression and the code
+which pushes its value onto the operand stack.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.FloatingConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FloatingConstextendsRealConst"></a>
+      <a id="FloatingConst:FloatingConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatingConst.html"><span class="name">FloatingConst</span></a><span class="result"> extends <a href="RealConst.html" class="extype" name="jgo.tools.compiler.interm.expr.RealConst">RealConst</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A floating-point constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.IntegralConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IntegralConstextendsRealConst"></a>
+      <a id="IntegralConst:IntegralConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IntegralConst.html"><span class="name">IntegralConst</span></a><span class="result"> extends <a href="RealConst.html" class="extype" name="jgo.tools.compiler.interm.expr.RealConst">RealConst</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An integral constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.NumericConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NumericConstextendsConstExpr"></a>
+      <a id="NumericConst:NumericConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="NumericConst.html"><span class="name">NumericConst</span></a><span class="result"> extends <a href="ConstExpr.html" class="extype" name="jgo.tools.compiler.interm.expr.ConstExpr">ConstExpr</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A constant that is either complex, floating-point, or integral.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.RealConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RealConstextendsNumericConst"></a>
+      <a id="RealConst:RealConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RealConst.html"><span class="name">RealConst</span></a><span class="result"> extends <a href="NumericConst.html" class="extype" name="jgo.tools.compiler.interm.expr.NumericConst">NumericConst</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A constant that is either floating-point or integral.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.StringConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StringConstextendsConstExpr"></a>
+      <a id="StringConst:StringConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="StringConst.html"><span class="name">StringConst</span></a><span class="result"> extends <a href="ConstExpr.html" class="extype" name="jgo.tools.compiler.interm.expr.ConstExpr">ConstExpr</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A string constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedBoolConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedBoolConstextendsBoolConstwithUntypedConstwithProductwithSerializable"></a>
+      <a id="UntypedBoolConst:UntypedBoolConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedBoolConst.html"><span class="name">UntypedBoolConst</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="BoolConst.html" class="extype" name="jgo.tools.compiler.interm.expr.BoolConst">BoolConst</a> with <a href="UntypedConst.html" class="extype" name="jgo.tools.compiler.interm.expr.UntypedConst">UntypedConst</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedComplexConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedComplexConstextendsComplexConstwithUntypedNumericConstwithProductwithSerializable"></a>
+      <a id="UntypedComplexConst:UntypedComplexConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedComplexConst.html"><span class="name">UntypedComplexConst</span></a><span class="params">(<span name="real">real: <span class="extype" name="scala.BigDecimal">BigDecimal</span></span>, <span name="imag">imag: <span class="extype" name="scala.BigDecimal">BigDecimal</span></span>)</span><span class="result"> extends <a href="ComplexConst.html" class="extype" name="jgo.tools.compiler.interm.expr.ComplexConst">ComplexConst</a> with <a href="UntypedNumericConst.html" class="extype" name="jgo.tools.compiler.interm.expr.UntypedNumericConst">UntypedNumericConst</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An untyped complex constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UntypedConstextendsConstExpr"></a>
+      <a id="UntypedConst:UntypedConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedConst.html"><span class="name">UntypedConst</span></a><span class="result"> extends <a href="ConstExpr.html" class="extype" name="jgo.tools.compiler.interm.expr.ConstExpr">ConstExpr</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A constant whose type is not constrained.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedFloatingConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedFloatingConstextendsFloatingConstwithUntypedRealConstwithProductwithSerializable"></a>
+      <a id="UntypedFloatingConst:UntypedFloatingConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedFloatingConst.html"><span class="name">UntypedFloatingConst</span></a><span class="params">(<span name="real">real: <span class="extype" name="scala.BigDecimal">BigDecimal</span></span>)</span><span class="result"> extends <a href="FloatingConst.html" class="extype" name="jgo.tools.compiler.interm.expr.FloatingConst">FloatingConst</a> with <a href="UntypedRealConst.html" class="extype" name="jgo.tools.compiler.interm.expr.UntypedRealConst">UntypedRealConst</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An untyped floating-point constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedIntegralConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedIntegralConstextendsIntegralConstwithUntypedRealConstwithProductwithSerializable"></a>
+      <a id="UntypedIntegralConst:UntypedIntegralConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedIntegralConst.html"><span class="name">UntypedIntegralConst</span></a><span class="params">(<span name="int">int: <span class="extype" name="scala.BigInt">BigInt</span></span>)</span><span class="result"> extends <a href="IntegralConst.html" class="extype" name="jgo.tools.compiler.interm.expr.IntegralConst">IntegralConst</a> with <a href="UntypedRealConst.html" class="extype" name="jgo.tools.compiler.interm.expr.UntypedRealConst">UntypedRealConst</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An untyped integral constant.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedNumericConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UntypedNumericConstextendsNumericConstwithUntypedConst"></a>
+      <a id="UntypedNumericConst:UntypedNumericConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedNumericConst.html"><span class="name">UntypedNumericConst</span></a><span class="result"> extends <a href="NumericConst.html" class="extype" name="jgo.tools.compiler.interm.expr.NumericConst">NumericConst</a> with <a href="UntypedConst.html" class="extype" name="jgo.tools.compiler.interm.expr.UntypedConst">UntypedConst</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An untyped constant that is either complex, floating-point, or integral.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedRealConst" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UntypedRealConstextendsRealConstwithUntypedNumericConst"></a>
+      <a id="UntypedRealConst:UntypedRealConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedRealConst.html"><span class="name">UntypedRealConst</span></a><span class="result"> extends <a href="RealConst.html" class="extype" name="jgo.tools.compiler.interm.expr.RealConst">RealConst</a> with <a href="UntypedNumericConst.html" class="extype" name="jgo.tools.compiler.interm.expr.UntypedNumericConst">UntypedNumericConst</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An untyped numeric constant that is either floating-point or integral.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedStringConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedStringConstextendsStringConstwithUntypedConstwithProductwithSerializable"></a>
+      <a id="UntypedStringConst:UntypedStringConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedStringConst.html"><span class="name">UntypedStringConst</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="StringConst.html" class="extype" name="jgo.tools.compiler.interm.expr.StringConst">StringConst</a> with <a href="UntypedConst.html" class="extype" name="jgo.tools.compiler.interm.expr.UntypedConst">UntypedConst</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.expr.BoolConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BoolConst"></a>
+      <a id="BoolConst:BoolConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BoolConst$.html"><span class="name">BoolConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.Combinators" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Combinators"></a>
+      <a id="Combinators:Combinators"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Combinators$.html"><span class="name">Combinators</span></a><span class="result"> extends <a href="combin/ConversionCombinators.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.ConversionCombinators">ConversionCombinators</a> with <a href="combin/BasicCombinators.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.BasicCombinators">BasicCombinators</a> with <a href="combin/ConditionalCombinators.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.ConditionalCombinators">ConditionalCombinators</a> with <a href="combin/LvalCombinators.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.LvalCombinators">LvalCombinators</a> with <a href="combin/ConstCombinators.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.ConstCombinators">ConstCombinators</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.ComplexConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ComplexConst"></a>
+      <a id="ComplexConst:ComplexConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ComplexConst$.html"><span class="name">ComplexConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.FloatingConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FloatingConst"></a>
+      <a id="FloatingConst:FloatingConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatingConst$.html"><span class="name">FloatingConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.IntegralConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntegralConst"></a>
+      <a id="IntegralConst:IntegralConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IntegralConst$.html"><span class="name">IntegralConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.NilConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NilConst"></a>
+      <a id="NilConst:NilConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NilConst$.html"><span class="name">NilConst</span></a><span class="result"> extends <a href="ConstExpr.html" class="extype" name="jgo.tools.compiler.interm.expr.ConstExpr">ConstExpr</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The constant expression corresponding to the value <code>nil</code>.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.NumericConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NumericConst"></a>
+      <a id="NumericConst:NumericConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NumericConst$.html"><span class="name">NumericConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.RealConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RealConst"></a>
+      <a id="RealConst:RealConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RealConst$.html"><span class="name">RealConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.StringConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringConst"></a>
+      <a id="StringConst:StringConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="StringConst$.html"><span class="name">StringConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedNumericConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedNumericConst"></a>
+      <a id="UntypedNumericConst:UntypedNumericConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedNumericConst$.html"><span class="name">UntypedNumericConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.UntypedRealConst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UntypedRealConst"></a>
+      <a id="UntypedRealConst:UntypedRealConst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UntypedRealConst$.html"><span class="name">UntypedRealConst</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bfunc"></a>
+      <a id="bfunc:bfunc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="bfunc/package.html"><span class="name">bfunc</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.combin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="combin"></a>
+      <a id="combin:combin"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="combin/package.html"><span class="name">combin</span></a>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+    </body>
+      </html>

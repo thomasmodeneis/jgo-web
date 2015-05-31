@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>bfunc - jgo.tools.compiler.interm.expr.bfunc</title>
+          <meta name="description" content="bfunc - jgo.tools.compiler.interm.expr.bfunc" />
+          <meta name="keywords" content="bfunc jgo.tools.compiler.interm.expr.bfunc" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../../index.html';
+            var hash = 'jgo.tools.compiler.interm.expr.bfunc.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../../package.html" class="extype" name="jgo">jgo</a>.<a href="../../../../package.html" class="extype" name="jgo.tools">tools</a>.<a href="../../../package.html" class="extype" name="jgo.tools.compiler">compiler</a>.<a href="../../package.html" class="extype" name="jgo.tools.compiler.interm">interm</a>.<a href="../package.html" class="extype" name="jgo.tools.compiler.interm.expr">expr</a></p>
+        <h1>bfunc</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bfunc</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.expr.bfunc.BuiltinFunc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BuiltinFuncextendsTyped"></a>
+      <a id="BuiltinFunc:BuiltinFunc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BuiltinFunc.html"><span class="name">BuiltinFunc</span></a><span class="result"> extends <a href="../../Typed.html" class="extype" name="jgo.tools.compiler.interm.Typed">Typed</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A built-in func, such as <code>len</code> or <code>make</code>.</p>
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.BuiltinRegularFunc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BuiltinRegularFuncextendsBuiltinFunc"></a>
+      <a id="BuiltinRegularFunc:BuiltinRegularFunc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BuiltinRegularFunc.html"><span class="name">BuiltinRegularFunc</span></a><span class="result"> extends <a href="BuiltinFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinFunc">BuiltinFunc</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.BuiltinTypeFunc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BuiltinTypeFuncextendsBuiltinFunc"></a>
+      <a id="BuiltinTypeFunc:BuiltinTypeFunc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BuiltinTypeFunc.html"><span class="name">BuiltinTypeFunc</span></a><span class="result"> extends <a href="BuiltinFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinFunc">BuiltinFunc</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.RealOrImag" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RealOrImagextendsBuiltinRegularFuncwithTypeCheckswithConstTypeCheckOverrides"></a>
+      <a id="RealOrImag:RealOrImag"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RealOrImag.html"><span class="name">RealOrImag</span></a><span class="result"> extends <a href="BuiltinRegularFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinRegularFunc">BuiltinRegularFunc</a> with <a href="../combin/TypeChecks.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.TypeChecks">TypeChecks</a> with <a href="../combin/ConstTypeCheckOverrides.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.ConstTypeCheckOverrides">ConstTypeCheckOverrides</a></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="jgo.tools.compiler.interm.expr.bfunc.Cap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Cap"></a>
+      <a id="Cap:Cap"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Cap$.html"><span class="name">Cap</span></a><span class="result"> extends <a href="BuiltinRegularFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinRegularFunc">BuiltinRegularFunc</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.Complex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Complex"></a>
+      <a id="Complex:Complex"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Complex$.html"><span class="name">Complex</span></a><span class="result"> extends <a href="BuiltinRegularFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinRegularFunc">BuiltinRegularFunc</a> with <a href="../combin/CompatConstChecks.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.CompatConstChecks">CompatConstChecks</a> with <a href="../combin/TypeChecks.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.TypeChecks">TypeChecks</a> with <a href="../combin/ConstTypeCheckOverrides.html" class="extype" name="jgo.tools.compiler.interm.expr.combin.ConstTypeCheckOverrides">ConstTypeCheckOverrides</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.Imag" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Imag"></a>
+      <a id="Imag:Imag"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Imag$.html"><span class="name">Imag</span></a><span class="result"> extends <a href="RealOrImag.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.RealOrImag">RealOrImag</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.Len" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Len"></a>
+      <a id="Len:Len"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Len$.html"><span class="name">Len</span></a><span class="result"> extends <a href="BuiltinRegularFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinRegularFunc">BuiltinRegularFunc</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.Make" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Make"></a>
+      <a id="Make:Make"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Make$.html"><span class="name">Make</span></a><span class="result"> extends <a href="BuiltinTypeFunc.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.BuiltinTypeFunc">BuiltinTypeFunc</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="jgo.tools.compiler.interm.expr.bfunc.Real" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Real"></a>
+      <a id="Real:Real"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Real$.html"><span class="name">Real</span></a><span class="result"> extends <a href="RealOrImag.html" class="extype" name="jgo.tools.compiler.interm.expr.bfunc.RealOrImag">RealOrImag</a></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../../lib/template.js"></script>
+    </body>
+      </html>
