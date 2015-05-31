@@ -1,0 +1,5 @@
+{
+	"ImportPath": "jgo-web",
+	"GoVersion": "go1.4.2",
+	"Deps": []
+}
