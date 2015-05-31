@@ -1,7 +1,7 @@
 Description
 ===========
 
-This is the web project for (JGO)[https://github.com/thomasmodeneis/jgo].
+This is the web project for [JGO](https://github.com/thomasmodeneis/jgo).
 
 
 Deploy
